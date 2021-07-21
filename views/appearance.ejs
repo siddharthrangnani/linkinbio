@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appearance</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"
+    />
+    <!-- 'nano' theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"
+      integrity="sha512-YxdM5kmpjM5ap4Q437qwxlKzBgJApGNw+zmchVHSNs3LgSoLhQIIUNNrR5SmKIpoQ18mp4y+aDAo9m/zBQ408g=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <!-- 'classic' theme -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="/appearance" method="post" >
+      <div class="row">
+        <div class="col-lg-2 mx-auto">
+          <div class="card mt-5" style="width: 18rem">
+            <div class="card-header"><h3>Appearance</h3></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <h5> Background color</h5>
+                <input data-jscolor="" name="bgColor" />
+              </li>
+              <li class="list-group-item">
+                <h5>Font Color</h5>
+                <input type="color" name="fontColor" />
+              </li>
+              <li class="list-group-item">
+                <h5>Bar Color</h5>
+                <input type="color" name="barColor" />
+              </li>
+              <li class="list-group-item">
+                <h5>Upload Profile Picture</h5>
+                <input type="file" id="image"
+                name="image" value=""  >
+              </li>
+            </ul>
+          </div>
+
+          <input type="submit" name="upload" class="btn dis-button btn-dark">
+            save changes
+          </button>
+        </form>
+        <a href="/admin"> <button type="button"  class="btn mt-3 dis-button btn-dark">
+          HomePage
+        </button> </a>
+        </div>
+      </div>
+   
+    
+    <footer
+      style="
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+      "
+    >
+      <img src="/img/instagram.png" alt="" width="30" height="31" />
+      <img src="/img/facebook.png" alt="" width="30" height="25" />
+      <img src="/img/twitter.png" alt="" width="30" height="25" />
+      <img src="/img/youtube.png" alt="" width="30" height="25" />
+      <p class="footer-text">Created by <strong>siddharth </strong></p>
+    </footer>
+    <script></script>
+  </body>
+</html>

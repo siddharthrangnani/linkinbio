@@ -1,0 +1,170 @@
+/* to set margin and padding to 0*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* index.html styles*/
+.index-query{
+    padding-top: 3%;
+    font-size:  3rem;
+} 
+.index-light{
+    font-size: 20px;
+}
+.nav-item{
+    
+    margin: 0% 5%;
+}
+.nav-item-userpanel{
+    margin: 0% 5%;
+}
+.index-navbar{
+    margin-right: 2%;
+}
+.body-register{
+    background-color: white ; 
+}
+.userpanel-input{
+    margin-top: 6%;
+}
+
+.bio-text{
+    position: absolute;
+    top: 22%;
+    left: 15.8%;
+    font-size: 8px;
+
+}
+
+.phone-gif{
+   
+    width: 35%; 
+   
+}
+@media (max-width: 1028px)
+{
+    .phone-gif{
+   
+        width: 70%; 
+        height:  auto;
+    }
+
+    #bio-video{
+        margin-top: 60px; 
+        width: 70%;
+        height: auto;  
+        ;
+       }
+       .displayLinks{
+           display: none;
+       }
+
+}
+.form-group label{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold ;
+    
+}
+#bio-video{
+ 
+margin: 10% 0%;
+ 
+ margin-left: 25px;
+
+}
+#bio-video > img{
+    height: 300px;
+    width: 400px;
+}
+#bio-video p{
+    margin-right: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+.card-body{
+    font-family: 'Oswald', sans-serif;
+    background:  white;
+    
+   
+    
+}
+#bio-video-2 > img{
+    height: 250px;
+    width: 300px;
+}
+#bio-video-2 > img{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+	align-content: stretch;
+}
+
+#social-links
+{
+    padding: 4% ;
+    background-color: rgb(82, 194, 82);
+}
+
+.bottom-container {
+    background-color: rgb(82, 194, 82);
+    padding: 50px 0 20px;
+  }
+  
+  
+  .footer-text{
+      text-align: center;
+      margin-top: 10px;
+  }
+.copyright{
+    display: flex;
+    
+    
+}
+.register-navbar{
+    color: white;
+    padding-left: 15px;
+}
+/* using css combinator */
+.reg-input input {
+    margin: 5% 0%;
+    border-radius: 15px;
+    width: 100%;
+    padding: 7px;
+      
+    
+}
+.reg-button{
+    margin-left: 33%;
+}
+.bio-text{
+    position: absolute;
+    top: 52%;
+    left: 45.8%;
+    font-size: 17px;
+
+}
+.previewSite{
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: flex-start;
+    align-content: normal;
+}
+/*.displayLinks{
+
+position: absolute;
+top: 18%;
+left: 74%;
+bottom: 25%;
+width: 20%;
+height: 70%;
+border: solid;
+border-radius: 15px ;
+
+
+}*/
+

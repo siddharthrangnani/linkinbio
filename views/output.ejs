@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= mainName %></title>
+    <!-- bootstraplink -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- jquerylinks -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+</head>
+
+<body style="background-color: <%= BgColor %>;">
+    
+    <h5 style="text-align: center;" class="mt-5 mb-3"> 
+       
+        <%= mainName %>
+        <br>
+        <img src="/img/user-64x64-882891.png" class="mt-3" alt="">
+    </h5>
+    <table class="table table-borderless">
+     
+        <% linkTitle.forEach(function(links){ %>
+            <tbody>
+                <tr>
+                    <td> <a href="<%= links.linkUrl %>">
+                        <button type="button" style="background-color: <%= barColor %>; color: <%= fontColor%>;"  class=" col-lg-6 mx-auto btn btn-primary btn-lg btn-block"> 
+                            <%= links.linkTitle %>
+                        </button>
+                       
+                    </a>
+                    </td>
+                </tr>
+            </tbody>
+            <% }) %>
+            <% instagram.forEach(function(links){ %>
+                <div  class="text-center" style="bottom: 0; position: absolute;height: 60px; width: 100%;">
+            <a href="<%= links.instagram %>"><img  src="/img/instagram.png" alt="" width="50" height="50"> </a> 
+              <a href="<%= links.facebook %>"> <img src="/img/facebook.png" alt="" width="50" height="50"></a> 
+             <a href="<%= links.twitter %>"> <img  src="/img/twitter.png" alt="" width="50" height="50"></a> 
+             <a href="<%= links.snapchat %>"> <img src="/img/youtube.png" alt="" width="50" height="50"></a> 
+              
+                  </div>
+                  <% }) %>
+           </body>
+
+</html>
